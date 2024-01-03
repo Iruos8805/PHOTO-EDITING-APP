@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/114/760/992/abstract-hexagon-digital-art-pattern-wallpaper-preview.jpg");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Inside your CSS file or style block */
+.my-gallery .image-gallery-thumbnail img {
+  width: 100px; /* Adjust thumbnail width as needed */
+  height: 60px; /* Adjust thumbnail height as needed */
+  object-fit: cover; /* Preserve aspect ratio */
+}
+
+.image-gallery-slide img {
+  max-height: 400px; /* Adjust the height as needed */
+  max-width: 600px; /* Adjust the width as needed */
+  object-fit: contain; /* This property ensures the image fits within the specified dimensions while preserving aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Add this CSS in your index.css or relevant CSS file */
+
+/* Style for the gallery images to display them side by side */
+.image-gallery-slide .image-gallery-image {
+  width: 300px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  display: inline-block; /* Display images inline */
+  margin-right: 10px; /* Add some spacing between images */
+}
+
+.title{
+  background-color: #333; /* Set the background color of the bar */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center-align the text */
+
+}
+
+.title h2 {
+  color: white; /* Set text color to white */
+  text-align: center; /* Center-align the text */
+  font-size: 2rem; /* Set the font size as an example, adjust as needed */
+}
+
+.desired{
+  background-color: #333; /* Set the background color of the bar */
+  color: white; /* Set text color to white */
+  text-align: center; /* Center-align the text */
+
+}
+
+.input {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  size:500px;
+}
+
+.custom-file-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background:#8B0000;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.custom-file-upload:hover {
+  background: #8B0000;
+}
+
+.image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.filterButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.filterButton {
+  margin: 5px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filterButton.grayscale {
+  background-color: black;
+  border: 1px solid #888888;
+  color: white;
+}
+
+.filterButton.sepia {
+  background-color: #c09060;
+  border: 1px solid #886644;
+  color: black;
+}
+
+.filterButton.invert {
+  background-color: blue;
+  border: 1px solid #333333;
+  color: white;
+}
+
+.download {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: green;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Other styles as needed */
+}
+
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.gallery{
+  background-color: #333; /* Set the background color of the bar */
+  color: white; /* Set text color to white */
+  text-align: center; 
+}
+
+.gallery h3{
+  color: white; /* Set text color to white */
+  text-align: center; /* Center-align the text */
+  font-size: 2rem;
+}
+
+.navbuts {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navbut {
+  margin: 10px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navbut.previous {
+  background-color: black;
+  border: 1px solid #888888;
+  color: white;
+}
+
+.navbut.next {
+  background-color: black;
+  border: 1px solid #888888;
+  color: white;
+}
+
