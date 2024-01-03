@@ -66,7 +66,7 @@ function App() {
   }
 
   useEffect(() => {
-    setImageLoaded(false); // Reset image loaded state on file change
+    setImageLoaded(false); // to indicate a new image is uploaded.
   }, [file]);
 
   function handleDownload() {
@@ -74,7 +74,7 @@ function App() {
 
     if (!imageLoaded) {
       console.log('Image not loaded yet');
-      return; // Prevents downloading an empty image
+      return; // To prevent downloading emply
     }
 
     htmlToImage.toPng(node, { width: originalImageDimensions.width, height: originalImageDimensions.height })
